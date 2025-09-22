@@ -1,0 +1,77 @@
+﻿@model FidenzApp.Domain.Entities.Customers
+
+
+
+<div class="w-100 card border-0 p-4">
+    <div class="w-100 card border-0 m-4">
+        <div class="class-header bg-black bg-gradient ml-0 py-3 rounded-3">
+            <div class="row">
+                <div class="text-center">
+                    <h2 class="text-white py-2">Update List</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card-body border-4">
+        <form method="post" class=" row">
+            <input asp-for="_id" type="hidden" />
+            <input type="hidden" asp-for="age" />
+            <input type="hidden" asp-for="eyeColor" />
+            <input type="hidden" asp-for="gender" />
+            <input type="hidden" asp-for="company" />
+            <input type="hidden" asp-for="about" />
+            <input type="hidden" asp-for="registered" />
+            <input type="hidden" asp-for="latitude" />
+            <input type="hidden" asp-for="longitude" />
+            <input type="hidden" asp-for="address.number" />
+            <input type="hidden" asp-for="address.street" />
+            <input type="hidden" asp-for="address.city" />
+            <input type="hidden" asp-for="address.state" />
+            <input type="hidden" asp-for="address.zipcode" />
+            <input type="hidden" asp-for="tags" />
+            <div class="p-3">
+
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                <div class="form-floating py-2 col-12">
+                    <input asp-for="name" value="@Model.name" class="form-control border shadow" />
+                    <label asp-for="name" class="ms-2"></label>
+                    <span asp-validation-for="name" class="text-danger"></span>
+                </div>
+                <div class="form-floating py-2 col-12">
+                    <input asp-for="email" value="@Model.email" class="form-control border shadow" />
+                    <label asp-for="email" class="ms-2"></label>
+                    <span asp-validation-for="email" class="text-danger"></span>
+                </div>
+                <div class="form-floating py-2 col-12">
+                    <input asp-for="phone" value="@Model.phone" class="form-control border shadow" />
+                    <label asp-for="phone" class="ms-2"></label>
+                    <span asp-validation-for="phone" class="text-danger"></span>
+                </div>'
+
+                <div class="row pt-2">
+                    <div class="col-6 col-md-3">
+                        <button type="submit" class="btn btn btn-success w-100">
+                            <i class="bi bi-check-circle">
+                                Update
+                            </i>
+                        </button>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <a href="javascript:history.back()" class=" btn btn-secondary w-100">
+                            Cancel
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        <partial name="_ValidationScriptsPartial" />
+    }
+}
