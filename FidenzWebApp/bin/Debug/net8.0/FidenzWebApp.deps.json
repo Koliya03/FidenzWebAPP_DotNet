@@ -9,7 +9,6 @@
       "FidenzWebApp/1.0.0": {
         "dependencies": {
           "FidenzApp.Application": "1.0.0",
-          "FidenzApp.Domain": "1.0.0",
           "FidenzApp.Infranstructure": "1.0.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "8.0.19",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "8.0.19",

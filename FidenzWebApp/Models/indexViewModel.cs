@@ -1,11 +1,11 @@
 ﻿
-using FidenzApp.Domain.Entities;
+using FidenzApp.Application.DTO;
 
 namespace FidenzWebApp.Models
 {
     public class indexViewModel
     {
-        public List<Customers> customerList = new List<Customers>();
+        public List<CustomerDto> customerList = new List<CustomerDto>();
         public bool isGroupedByZip = false;
     }
 }

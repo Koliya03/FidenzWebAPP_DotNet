@@ -18,21 +18,63 @@ namespace FidenzApp.Application.Interfaces.Services.services
         {
             _unitOfWork = unitOfWork;
         }
-        public async Task<IEnumerable<Customers>> GetAllAsync()
+
+        private CustomerDto MapToDto(Customers c)
+        {
+          return  new CustomerDto
+            {
+                _id = c._id,
+                index = c.index,
+                age = c.age,
+                eyeColor = c.eyeColor,
+                name = c.name,
+                gender = c.gender,
+                company = c.company,
+                email = c.email,
+                phone = c.phone,
+                about = c.about,
+                registered = c.registered,
+                latitude = c.latitude,
+                longitude = c.longitude,
+                tags = c.tags ?? new List<string>(),
+                address = c.address == null ? null : new AddressDto
+                {
+                    number = c.address.number,
+                    street = c.address.street,
+                    city = c.address.city,
+                    state = c.address.state,
+                    zipcode = c.address.zipcode
+                }
+            }; 
+        }
+
+        private List<CustomerDto> MapToDto(IEnumerable<Customers> items)
+        {
+            var list = new List<CustomerDto>();
+            if (items == null) return list;
+
+            foreach (var c in items)
+            {
+                if (c != null)
+                    list.Add(MapToDto(c));
+            }
+            return list;
+        }
+        public async Task<IEnumerable<CustomerDto>> GetAllAsync()
         {
             var customersList = await _unitOfWork.CustomerRepository.GetAllAsync();
             if (customersList.Count() > 0)
             {
-                return customersList;
+                return MapToDto(customersList);
 
             }
             else
             {
-                return Enumerable.Empty<Customers>().ToList();
+                return new List<CustomerDto>();
             }
         }
 
-        public async Task<IEnumerable<Customers>> GetAllBySearchAsync(string search)
+        public async Task<IEnumerable<CustomerDto>> GetAllBySearchAsync(string search)
         {
             var customers = await _unitOfWork.CustomerRepository.GetAllAsync();
 
@@ -50,30 +92,33 @@ namespace FidenzApp.Application.Interfaces.Services.services
 
 
             if (customersListByDetails.Count() > 0)
-            { return customersListByDetails; }
+            { 
+                return MapToDto(customersListByDetails);
+            }
             else
             {
-                return Enumerable.Empty<Customers>().ToList();
+                return new List<CustomerDto>();
             }
         }
 
-        public async Task<Customers?> GetCustomerByIdAsync(string id)
+        public async Task<CustomerDto?> GetCustomerByIdAsync(string id)
         {
-             return await _unitOfWork.CustomerRepository.GetSync(x => x._id == id);
+             var customer =  await _unitOfWork.CustomerRepository.GetSync(x => x._id == id);
+            return MapToDto(customer);
            
         }
 
-        public async Task<IEnumerable< Customers>> GetAllByZipAsync()
+        public async Task<IEnumerable<CustomerDto>> GetAllByZipAsync()
         {
             var customers = await _unitOfWork.CustomerRepository.GetAllAsync();
             var customersByZip = customers.Select(c => c)
                 .OrderBy(x => x.address.zipcode).ToList();
-            return customersByZip;
+            return MapToDto(customersByZip);
         }
 
         public async Task<double> getDistance(string id, double latitude, double longitude)
         {
-            Customers customer = await _unitOfWork.CustomerRepository.GetSync(x => x._id == id);
+            var customer = await _unitOfWork.CustomerRepository.GetSync(x => x._id == id);
             double customerLongitude = customer.longitude;
             double customerLatitude = customer.latitude;
 

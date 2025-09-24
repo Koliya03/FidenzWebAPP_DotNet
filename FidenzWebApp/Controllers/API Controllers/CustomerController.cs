@@ -27,14 +27,10 @@ namespace FidenzWebApp.Controllers
     public class CustomerController : ControllerBase
     {
         private ICustomerService customerService;
-        private IConfiguration _configuration;
-        private IUnitOfWork _unitOfWork;
-        
-        public CustomerController(ICustomerService customerService, IConfiguration configuration, IUnitOfWork unitOfWork)
+
+        public CustomerController(ICustomerService customerService)
         {
             this.customerService = customerService;
-            _configuration = configuration;
-             _unitOfWork = unitOfWork;
         }
 
 
@@ -52,7 +48,7 @@ namespace FidenzWebApp.Controllers
         [Route("customerID/{id}")]
         public async Task<IActionResult> GetCustomerById(string id)
         {
-            Customers? customer =await customerService.GetCustomerByIdAsync(id);
+            var customer =await customerService.GetCustomerByIdAsync(id);
             if (customer == null)
             {
                 return BadRequest();

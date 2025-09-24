@@ -23,7 +23,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\FidenzApp.Application\FidenzApp.Application.csproj" />
-    <ProjectReference Include="..\FidenzApp.Domain\FidenzApp.Domain.csproj" />
     <ProjectReference Include="..\FidenzApp.Infranstructure\FidenzApp.Infranstructure.csproj" />
   </ItemGroup>
 

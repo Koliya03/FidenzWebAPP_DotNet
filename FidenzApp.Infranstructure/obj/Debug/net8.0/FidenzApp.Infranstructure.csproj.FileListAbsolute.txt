@@ -18,25 +18,6 @@ C:\fidenz training\Dotnet Training\FidenzApp.web\FidenzApp.Infranstructure\obj\D
 C:\fidenz training\Dotnet Training\FidenzApp.web\FidenzApp.Infranstructure\obj\Debug\net8.0\FidenzApp.Infranstructure.genruntimeconfig.cache
 C:\fidenz training\Dotnet Training\FidenzApp.web\FidenzApp.Infranstructure\obj\Debug\net8.0\ref\FidenzApp.Infranstructure.dll
 C:\fidenz training\Dotnet Training\FidenzApp.web\FidenzApp.Infranstructure\obj\Debug\net8.0\FidenzApp.Infranstructure.sourcelink.json
-C:\fidenz training\Dotnet_Assignment\FidenzApp.Infranstructure\bin\Debug\net8.0\FidenzApp.Infranstructure.deps.json
-C:\fidenz training\Dotnet_Assignment\FidenzApp.Infranstructure\bin\Debug\net8.0\FidenzApp.Infranstructure.runtimeconfig.json
-C:\fidenz training\Dotnet_Assignment\FidenzApp.Infranstructure\bin\Debug\net8.0\FidenzApp.Infranstructure.dll
-C:\fidenz training\Dotnet_Assignment\FidenzApp.Infranstructure\bin\Debug\net8.0\FidenzApp.Infranstructure.pdb
-C:\fidenz training\Dotnet_Assignment\FidenzApp.Infranstructure\bin\Debug\net8.0\FidenzApp.Application.dll
-C:\fidenz training\Dotnet_Assignment\FidenzApp.Infranstructure\bin\Debug\net8.0\FidenzApp.Domain.dll
-C:\fidenz training\Dotnet_Assignment\FidenzApp.Infranstructure\bin\Debug\net8.0\FidenzApp.Application.pdb
-C:\fidenz training\Dotnet_Assignment\FidenzApp.Infranstructure\bin\Debug\net8.0\FidenzApp.Domain.pdb
-C:\fidenz training\Dotnet_Assignment\FidenzApp.Infranstructure\obj\Debug\net8.0\FidenzApp.Infranstructure.csproj.AssemblyReference.cache
-C:\fidenz training\Dotnet_Assignment\FidenzApp.Infranstructure\obj\Debug\net8.0\FidenzApp.Infranstructure.GeneratedMSBuildEditorConfig.editorconfig
-C:\fidenz training\Dotnet_Assignment\FidenzApp.Infranstructure\obj\Debug\net8.0\FidenzApp.Infranstructure.AssemblyInfoInputs.cache
-C:\fidenz training\Dotnet_Assignment\FidenzApp.Infranstructure\obj\Debug\net8.0\FidenzApp.Infranstructure.AssemblyInfo.cs
-C:\fidenz training\Dotnet_Assignment\FidenzApp.Infranstructure\obj\Debug\net8.0\FidenzApp.Infranstructure.csproj.CoreCompileInputs.cache
-C:\fidenz training\Dotnet_Assignment\FidenzApp.Infranstructure\obj\Debug\net8.0\FidenzAp.0C09953D.Up2Date
-C:\fidenz training\Dotnet_Assignment\FidenzApp.Infranstructure\obj\Debug\net8.0\FidenzApp.Infranstructure.dll
-C:\fidenz training\Dotnet_Assignment\FidenzApp.Infranstructure\obj\Debug\net8.0\refint\FidenzApp.Infranstructure.dll
-C:\fidenz training\Dotnet_Assignment\FidenzApp.Infranstructure\obj\Debug\net8.0\FidenzApp.Infranstructure.pdb
-C:\fidenz training\Dotnet_Assignment\FidenzApp.Infranstructure\obj\Debug\net8.0\FidenzApp.Infranstructure.genruntimeconfig.cache
-C:\fidenz training\Dotnet_Assignment\FidenzApp.Infranstructure\obj\Debug\net8.0\ref\FidenzApp.Infranstructure.dll
 C:\fidenz training\Dotnet Repo\FidenzWebAPP_DotNet\FidenzApp.Infranstructure\bin\Debug\net8.0\FidenzApp.Infranstructure.deps.json
 C:\fidenz training\Dotnet Repo\FidenzWebAPP_DotNet\FidenzApp.Infranstructure\bin\Debug\net8.0\FidenzApp.Infranstructure.runtimeconfig.json
 C:\fidenz training\Dotnet Repo\FidenzWebAPP_DotNet\FidenzApp.Infranstructure\bin\Debug\net8.0\FidenzApp.Infranstructure.dll

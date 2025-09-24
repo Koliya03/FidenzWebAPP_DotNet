@@ -1,5 +1,4 @@
-﻿@model FidenzApp.Domain.Entities.Customers
-
+﻿@model FidenzApp.Application.DTO.CustomerDto
 
 
 <div class="w-100 card border-0 p-4">
@@ -14,7 +13,7 @@
     </div>
 
     <div class="card-body border-4">
-        <form method="post" class=" row">
+        <form asp-action="UpdateSave" method="post" class=" row">
             <input asp-for="_id" type="hidden" />
             <input type="hidden" asp-for="age" />
             <input type="hidden" asp-for="eyeColor" />
@@ -59,7 +58,7 @@
                         </button>
                     </div>
                     <div class="col-6 col-md-3">
-                        <a href="javascript:history.back()" class=" btn btn-secondary w-100">
+                        <a asp-action="Index" class=" btn btn-secondary w-100">
                             Cancel
                         </a>
                     </div>

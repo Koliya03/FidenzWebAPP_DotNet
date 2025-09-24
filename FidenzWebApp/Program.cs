@@ -16,7 +16,7 @@ using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+
 builder.Services.AddControllersWithViews();
 
 builder.Services.AddEndpointsApiExplorer();
@@ -95,21 +95,8 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
             RoleClaimType = ClaimTypes.Role
         };
 
-        options.Events = new JwtBearerEvents
-        {
-            OnMessageReceived = context =>
-            {
-                if (string.IsNullOrEmpty(context.Token))
-                {
-                    var cookieToken = context.Request.Cookies["Auth"];
-                    if (!string.IsNullOrWhiteSpace(cookieToken))
-                        context.Token = cookieToken;
-                }
-                return Task.CompletedTask;
-            }
-        };
+       
     });
-
 var app = builder.Build();
 
 using (var scope = app.Services.CreateScope())
@@ -149,7 +136,7 @@ app.UseAuthorization();
 app.MapControllers();
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Login}");
+    pattern: "{controller=Home}/{action=LoginPage}");
 
 
 app.Run();

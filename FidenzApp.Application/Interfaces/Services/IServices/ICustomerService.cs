@@ -12,10 +12,10 @@ namespace FidenzApp.Application.Interfaces.Services.IServices
 {
     public interface ICustomerService
     {
-        Task<IEnumerable<Customers>> GetAllAsync();
-        Task<Customers> GetCustomerByIdAsync(string id);
-        Task<IEnumerable<Customers>> GetAllByZipAsync();
-        Task<IEnumerable<Customers>> GetAllBySearchAsync(string search);
+        Task<IEnumerable<CustomerDto>> GetAllAsync();
+        Task<CustomerDto> GetCustomerByIdAsync(string id);
+        Task<IEnumerable<CustomerDto>> GetAllByZipAsync();
+        Task<IEnumerable<CustomerDto>> GetAllBySearchAsync(string search);
         Task UpdateCustomer(string id, updateCustomerDto updateCustomer);
         Task <double> getDistance(string id, double latitude, double longitude);
     }

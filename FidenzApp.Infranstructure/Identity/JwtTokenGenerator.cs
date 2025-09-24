@@ -44,7 +44,7 @@ public class JwtTokenGenerator : IJwtTokenGenerator
                 issuer: _configuration.GetValue<string>("AppSettings:Issuer"),
                 audience: _configuration.GetValue<string>("AppSettings:Audience"),
                 claims: claims,
-                expires: DateTime.UtcNow.AddMinutes(_configuration.GetValue<int>("AppSettings:validityInMinutes")),
+                expires: DateTime.UtcNow.AddMinutes(_configuration.GetValue<int>("AppSettings:ValidityInMinutes")),
                 signingCredentials: creds
             );
 

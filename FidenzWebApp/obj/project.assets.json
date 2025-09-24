@@ -5777,7 +5777,6 @@
   "projectFileDependencyGroups": {
     "net8.0": [
       "FidenzApp.Application >= 1.0.0",
-      "FidenzApp.Domain >= 1.0.0",
       "FidenzApp.Infranstructure >= 1.0.0",
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 8.0.19",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 8.0.19",
@@ -5824,9 +5823,6 @@
           "projectReferences": {
             "C:\\fidenz training\\Dotnet Repo\\FidenzWebAPP_DotNet\\FidenzApp.Application\\FidenzApp.Application.csproj": {
               "projectPath": "C:\\fidenz training\\Dotnet Repo\\FidenzWebAPP_DotNet\\FidenzApp.Application\\FidenzApp.Application.csproj"
-            },
-            "C:\\fidenz training\\Dotnet Repo\\FidenzWebAPP_DotNet\\FidenzApp.Domain\\FidenzApp.Domain.csproj": {
-              "projectPath": "C:\\fidenz training\\Dotnet Repo\\FidenzWebAPP_DotNet\\FidenzApp.Domain\\FidenzApp.Domain.csproj"
             },
             "C:\\fidenz training\\Dotnet Repo\\FidenzWebAPP_DotNet\\FidenzApp.Infranstructure\\FidenzApp.Infranstructure.csproj": {
               "projectPath": "C:\\fidenz training\\Dotnet Repo\\FidenzWebAPP_DotNet\\FidenzApp.Infranstructure\\FidenzApp.Infranstructure.csproj"
