@@ -48,10 +48,14 @@ namespace FidenzWebApp.Controllers
         [Route("customerID/{id}")]
         public async Task<IActionResult> GetCustomerById(string id)
         {
+            if (string.IsNullOrWhiteSpace(id))
+            {
+                return BadRequest("Id can not be empty ");
+            }
             var customer =await customerService.GetCustomerByIdAsync(id);
             if (customer == null)
             {
-                return BadRequest();
+                return BadRequest("Can not find the Customer");
             }
             return Ok(customer);
         }
@@ -78,7 +82,7 @@ namespace FidenzWebApp.Controllers
             return Ok(customers);
         }
 
-        [HttpPut]
+        [HttpPatch]
         [Route("{id}")]
         public async Task<IActionResult> UpdateCustomer(string id, updateCustomerDto updateCustomer)
 
@@ -87,7 +91,7 @@ namespace FidenzWebApp.Controllers
 
             if (customer == null)
             {
-                return BadRequest();
+                return BadRequest("can not find Customer");
             }
             await customerService.UpdateCustomer(id,updateCustomer);
             return Ok(customer);
@@ -96,16 +100,20 @@ namespace FidenzWebApp.Controllers
   
         [HttpGet]
         [Route("Distance/{id}/Latitude/{latitude:double}/longitude/{longitude:double}")]
-        public async Task<IActionResult> getDistance(string id, double latitude, double longitude)
+        public async Task<IActionResult> GetDistance(string id, double latitude, double longitude)
         {
-            var customer = await customerService.GetCustomerByIdAsync(id);
-
-            if (customer == null)
+          
+           var Response = await customerService.getDistance(id, latitude, longitude);
+            if (Response == null)
             {
-                return BadRequest();
+               return BadRequest("Can not find the Customer");
             }
-           double km = await customerService.getDistance(id, latitude, longitude);
-           return Ok(km);
+            else
+            {
+                double km = Response.Value;
+                return Ok(km);
+            }
+               
 
         }
   

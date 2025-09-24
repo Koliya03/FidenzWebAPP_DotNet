@@ -2,6 +2,7 @@
 using FidenzApp.Application.Interfaces.Services.IServices;
 using FidenzApp.Application.Interfaces.UnitOfWork;
 using FidenzApp.Domain.Entities;
+using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -104,6 +105,10 @@ namespace FidenzApp.Application.Interfaces.Services.services
         public async Task<CustomerDto?> GetCustomerByIdAsync(string id)
         {
              var customer =  await _unitOfWork.CustomerRepository.GetSync(x => x._id == id);
+            if (customer == null)
+            {
+                return null;
+            }
             return MapToDto(customer);
            
         }
@@ -116,9 +121,12 @@ namespace FidenzApp.Application.Interfaces.Services.services
             return MapToDto(customersByZip);
         }
 
-        public async Task<double> getDistance(string id, double latitude, double longitude)
+        public async Task<ActionResult<double>> getDistance(string id, double latitude, double longitude)
         {
             var customer = await _unitOfWork.CustomerRepository.GetSync(x => x._id == id);
+            if (customer is null)
+                return null;
+
             double customerLongitude = customer.longitude;
             double customerLatitude = customer.latitude;
 
@@ -140,11 +148,15 @@ namespace FidenzApp.Application.Interfaces.Services.services
         public async Task UpdateCustomer(string id, updateCustomerDto updateCustomer)
         {
             var customer = await _unitOfWork.CustomerRepository.GetSync(u => u._id == id);
+            if (updateCustomer.Name is not null)
+                customer.name = updateCustomer.Name;
 
-            customer.name = updateCustomer.Name;
-            customer.email = updateCustomer.Email;
-            customer.phone = updateCustomer.Phone;
+            if (updateCustomer.Email is not null)
+                customer.email = updateCustomer.Email;
 
+            if (updateCustomer.Phone is not null)
+                customer.phone = updateCustomer.Phone;
+           
             await _unitOfWork.CustomerRepository.saveAsync();
         }
 

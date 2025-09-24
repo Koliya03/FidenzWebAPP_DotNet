@@ -45,7 +45,7 @@
     "ContainingType": "FidenzWebApp.Controllers.CustomerController",
     "Method": "UpdateCustomer",
     "RelativePath": "api/Customer/{id}",
-    "HttpMethod": "PUT",
+    "HttpMethod": "PATCH",
     "IsController": true,
     "Order": 0,
     "Parameters": [
@@ -96,7 +96,7 @@
   },
   {
     "ContainingType": "FidenzWebApp.Controllers.CustomerController",
-    "Method": "getDistance",
+    "Method": "GetDistance",
     "RelativePath": "api/Customer/Distance/{id}/Latitude/{latitude}/longitude/{longitude}",
     "HttpMethod": "GET",
     "IsController": true,

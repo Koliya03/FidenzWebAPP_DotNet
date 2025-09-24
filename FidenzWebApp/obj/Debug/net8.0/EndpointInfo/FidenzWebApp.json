@@ -136,7 +136,7 @@
       }
     },
     "/api/Customer/{id}": {
-      "put": {
+      "patch": {
         "tags": [
           "Customer"
         ],

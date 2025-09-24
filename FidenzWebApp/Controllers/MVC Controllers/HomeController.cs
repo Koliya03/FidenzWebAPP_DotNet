@@ -130,19 +130,21 @@ namespace FidenzWebApp.Controllers
             return View(vm);
         }
 
-
-        [HttpPost]
-        [ValidateAntiForgeryToken]
         public async Task<IActionResult> DistanceCalc(DistanceCalModel vm)
         {
 
             try
             {
-                vm.DistanceKm = await _customerService.getDistance(
+
+                var response= await _customerService.getDistance(
                     vm.Id,
                     vm.Latitude.Value,
                     vm.Longitude.Value
                 );
+                if (response != null)
+                {
+                    vm.DistanceKm = response.Value;
+                }
             }
             catch
             {

@@ -1,6 +1,7 @@
 ﻿using FidenzApp.Application.DTO;
 using FidenzApp.Application.Interfaces.UnitOfWork;
 using FidenzApp.Domain.Entities;
+using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,6 +18,6 @@ namespace FidenzApp.Application.Interfaces.Services.IServices
         Task<IEnumerable<CustomerDto>> GetAllByZipAsync();
         Task<IEnumerable<CustomerDto>> GetAllBySearchAsync(string search);
         Task UpdateCustomer(string id, updateCustomerDto updateCustomer);
-        Task <double> getDistance(string id, double latitude, double longitude);
+        Task <ActionResult<double>> getDistance(string id, double latitude, double longitude);
     }
 }
