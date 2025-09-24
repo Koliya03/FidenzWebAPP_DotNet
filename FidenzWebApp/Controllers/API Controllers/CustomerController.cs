@@ -83,9 +83,8 @@ namespace FidenzWebApp.Controllers
         }
 
         [HttpPatch]
-        [Route("{id}")]
+        [Route("UpdateCustomer/{id}")]
         public async Task<IActionResult> UpdateCustomer(string id, updateCustomerDto updateCustomer)
-
         {
             var customer =await customerService.GetCustomerByIdAsync(id);
 

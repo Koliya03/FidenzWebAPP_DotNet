@@ -135,7 +135,7 @@
         }
       }
     },
-    "/api/Customer/{id}": {
+    "/api/Customer/UpdateCustomer/{id}": {
       "patch": {
         "tags": [
           "Customer"

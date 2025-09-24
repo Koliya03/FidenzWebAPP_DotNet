@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FidenzWebApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+62dae419819f0b75b03bb228af319f7f411e9477")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+60466c2f8aa7ab77c7183783a288dec2135b0fe8")]
 [assembly: System.Reflection.AssemblyProductAttribute("FidenzWebApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FidenzWebApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
