@@ -15,6 +15,7 @@ using System.Threading.Tasks;
 
 namespace FidenzWebApp.Controllers
 {
+    [Authorize]
     public class HomeController : Controller
     {
         private ICustomerService _customerService;
@@ -25,13 +26,14 @@ namespace FidenzWebApp.Controllers
             _authService = authService;
             _customerService = customerService;
         }
-       
-    
+
+        [AllowAnonymous]
         public IActionResult LoginPage()
         {
             return View("Login");         
         }
 
+        [AllowAnonymous]
         public async Task<IActionResult> Login(LoginDto userdto)
         {
             if (userdto == null) {
@@ -59,6 +61,7 @@ namespace FidenzWebApp.Controllers
        
         public IActionResult Logout()
         {
+             Response.Cookies.Delete("Auth");
             return RedirectToAction("LoginPage");
         }       
         public async Task<IActionResult> Index(string Search)
