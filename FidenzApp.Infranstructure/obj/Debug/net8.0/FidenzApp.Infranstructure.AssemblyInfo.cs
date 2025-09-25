@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FidenzApp.Infranstructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+62dae419819f0b75b03bb228af319f7f411e9477")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e879043adf9bb280ff6770e0e78897ebcf8d8b80")]
 [assembly: System.Reflection.AssemblyProductAttribute("FidenzApp.Infranstructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FidenzApp.Infranstructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

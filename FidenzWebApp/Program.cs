@@ -1,6 +1,6 @@
-using FidenzApp.Application.Interfaces.Services.IServices;
-using FidenzApp.Application.Interfaces.Services.services;
+using FidenzApp.Application.Interfaces.Services;
 using FidenzApp.Application.Interfaces.UnitOfWork;
+using FidenzApp.Application.Services;
 using FidenzApp.Domain.Data;
 using FidenzApp.Domain.Entities;
 using FidenzApp.Infranstructure.Identity;
@@ -120,11 +120,13 @@ builder.Services.AddAuthentication(options =>
         },
         OnChallenge = context =>
         {
-            if (!context.HttpContext.User.Identity?.IsAuthenticated ?? true)
+            if (context.Request.Path.StartsWithSegments("/api"))
             {
-                context.HandleResponse();
-                context.HttpContext.Response.Redirect("/Home/LoginPage");
+                return Task.CompletedTask; 
             }
+            
+            context.HandleResponse();
+            context.HttpContext.Response.Redirect("/Home/LoginPage");          
             return Task.CompletedTask;
         }
     };
@@ -148,14 +150,14 @@ if (!app.Environment.IsDevelopment())
     // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
-if (app.Environment.IsDevelopment())
+else
 {
     app.UseSwagger();
     app.UseSwaggerUI(c =>
     {
 
         c.SwaggerEndpoint("/swagger/v1/swagger.json", "Fidenz API v1");
-        c.RoutePrefix = "swagger"; 
+        c.RoutePrefix = "swagger";
     });
 }
 

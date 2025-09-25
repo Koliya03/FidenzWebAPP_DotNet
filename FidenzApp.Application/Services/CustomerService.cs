@@ -1,5 +1,5 @@
 ﻿using FidenzApp.Application.DTO;
-using FidenzApp.Application.Interfaces.Services.IServices;
+using FidenzApp.Application.Interfaces.Services;
 using FidenzApp.Application.Interfaces.UnitOfWork;
 using FidenzApp.Domain.Entities;
 using Microsoft.AspNetCore.Mvc;
@@ -9,7 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FidenzApp.Application.Interfaces.Services.services
+namespace FidenzApp.Application.Services
 {
     public class CustomerService : ICustomerService
     {
@@ -159,7 +159,6 @@ namespace FidenzApp.Application.Interfaces.Services.services
            
             await _unitOfWork.CustomerRepository.saveAsync();
         }
-
 
     }
 }

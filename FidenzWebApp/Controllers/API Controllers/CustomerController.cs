@@ -1,5 +1,5 @@
 ﻿using FidenzApp.Application.DTO;
-using FidenzApp.Application.Interfaces.Services.IServices;
+using FidenzApp.Application.Interfaces.Services;
 using FidenzApp.Application.Interfaces.UnitOfWork;
 using FidenzApp.Domain.Entities;
 using FidenzApp.Infranstructure.Repositories;
@@ -96,7 +96,6 @@ namespace FidenzWebApp.Controllers
             return Ok(customer);
         }
 
-  
         [HttpGet]
         [Route("Distance/{id}/Latitude/{latitude:double}/longitude/{longitude:double}")]
         public async Task<IActionResult> GetDistance(string id, double latitude, double longitude)

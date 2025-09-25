@@ -1,5 +1,5 @@
 ﻿using FidenzApp.Application.DTO;
-using FidenzApp.Application.Interfaces.Services.IServices;
+using FidenzApp.Application.Interfaces.Services;
 using FidenzApp.Domain.Entities;
 using Microsoft.AspNetCore.Identity;
 using System;
@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FidenzApp.Application.Interfaces.Services.services
+namespace FidenzApp.Application.Services
 {
     public class AuthService : IAuthService
     {
@@ -40,7 +40,7 @@ namespace FidenzApp.Application.Interfaces.Services.services
             return true;
         }
 
-        public async Task<String?> LoginAsync(LoginDto loginDto)
+        public async Task<string?> LoginAsync(LoginDto loginDto)
         {
             var user = await _userManager.FindByNameAsync(loginDto.Username);
             if (user == null || !await _userManager.CheckPasswordAsync(user, loginDto.Password))

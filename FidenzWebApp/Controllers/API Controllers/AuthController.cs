@@ -1,5 +1,5 @@
 ﻿using FidenzApp.Application.DTO;
-using FidenzApp.Application.Interfaces.Services.IServices;
+using FidenzApp.Application.Interfaces.Services;
 using Microsoft.AspNetCore.Mvc;
 
 

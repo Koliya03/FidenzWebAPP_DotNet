@@ -9,7 +9,7 @@ using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FidenzApp.Application.Interfaces.Services.IServices
+namespace FidenzApp.Application.Interfaces.Services
 {
     public interface ICustomerService
     {
@@ -19,5 +19,6 @@ namespace FidenzApp.Application.Interfaces.Services.IServices
         Task<IEnumerable<CustomerDto>> GetAllBySearchAsync(string search);
         Task UpdateCustomer(string id, updateCustomerDto updateCustomer);
         Task <ActionResult<double>> getDistance(string id, double latitude, double longitude);
+
     }
 }

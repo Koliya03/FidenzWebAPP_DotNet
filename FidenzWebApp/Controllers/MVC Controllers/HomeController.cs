@@ -1,7 +1,7 @@
 
 using Azure;
 using FidenzApp.Application.DTO;
-using FidenzApp.Application.Interfaces.Services.IServices;
+using FidenzApp.Application.Interfaces.Services;
 using FidenzApp.Domain.Entities;
 using FidenzWebApp.Models;
 using Microsoft.AspNetCore.Authorization;

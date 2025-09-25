@@ -3,32 +3,68 @@
   "WorkspaceRootPath": "C:\\fidenz training\\Dotnet Repo\\FidenzWebAPP_DotNet\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2D723EFA-F066-4BE9-948E-2F4D25790E0E}|FidenzWebApp\\FidenzWebApp.csproj|c:\\fidenz training\\dotnet repo\\fidenzwebapp_dotnet\\fidenzwebapp\\controllers\\api controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2D723EFA-F066-4BE9-948E-2F4D25790E0E}|FidenzWebApp\\FidenzWebApp.csproj|solutionrelative:fidenzwebapp\\controllers\\api controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2D723EFA-F066-4BE9-948E-2F4D25790E0E}|FidenzWebApp\\FidenzWebApp.csproj|c:\\fidenz training\\dotnet repo\\fidenzwebapp_dotnet\\fidenzwebapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D723EFA-F066-4BE9-948E-2F4D25790E0E}|FidenzWebApp\\FidenzWebApp.csproj|solutionrelative:fidenzwebapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2D723EFA-F066-4BE9-948E-2F4D25790E0E}|FidenzWebApp\\FidenzWebApp.csproj|c:\\fidenz training\\dotnet repo\\fidenzwebapp_dotnet\\fidenzwebapp\\controllers\\mvc controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2D723EFA-F066-4BE9-948E-2F4D25790E0E}|FidenzWebApp\\FidenzWebApp.csproj|solutionrelative:fidenzwebapp\\controllers\\mvc controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E2131EFB-54C5-453E-8DC0-FAC55CFFB959}|FidenzApp.Application\\FidenzApp.Application.csproj|c:\\fidenz training\\dotnet repo\\fidenzwebapp_dotnet\\fidenzapp.application\\interfaces\\services\\services\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E2131EFB-54C5-453E-8DC0-FAC55CFFB959}|FidenzApp.Application\\FidenzApp.Application.csproj|solutionrelative:fidenzapp.application\\interfaces\\services\\services\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2D723EFA-F066-4BE9-948E-2F4D25790E0E}|FidenzWebApp\\FidenzWebApp.csproj|c:\\fidenz training\\dotnet repo\\fidenzwebapp_dotnet\\fidenzwebapp\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2D723EFA-F066-4BE9-948E-2F4D25790E0E}|FidenzWebApp\\FidenzWebApp.csproj|solutionrelative:fidenzwebapp\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2D723EFA-F066-4BE9-948E-2F4D25790E0E}|FidenzWebApp\\FidenzWebApp.csproj|c:\\fidenz training\\dotnet repo\\fidenzwebapp_dotnet\\fidenzwebapp\\views\\home\\distance.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{2D723EFA-F066-4BE9-948E-2F4D25790E0E}|FidenzWebApp\\FidenzWebApp.csproj|solutionrelative:fidenzwebapp\\views\\home\\distance.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E2131EFB-54C5-453E-8DC0-FAC55CFFB959}|FidenzApp.Application\\FidenzApp.Application.csproj|c:\\fidenz training\\dotnet repo\\fidenzwebapp_dotnet\\fidenzapp.application\\interfaces\\services\\iservices\\icustomerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E2131EFB-54C5-453E-8DC0-FAC55CFFB959}|FidenzApp.Application\\FidenzApp.Application.csproj|solutionrelative:fidenzapp.application\\interfaces\\services\\iservices\\icustomerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2D723EFA-F066-4BE9-948E-2F4D25790E0E}|FidenzWebApp\\FidenzWebApp.csproj|c:\\fidenz training\\dotnet repo\\fidenzwebapp_dotnet\\fidenzwebapp\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2D723EFA-F066-4BE9-948E-2F4D25790E0E}|FidenzWebApp\\FidenzWebApp.csproj|solutionrelative:fidenzwebapp\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D723EFA-F066-4BE9-948E-2F4D25790E0E}|FidenzWebApp\\FidenzWebApp.csproj|c:\\fidenz training\\dotnet repo\\fidenzwebapp_dotnet\\fidenzwebapp\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2D723EFA-F066-4BE9-948E-2F4D25790E0E}|FidenzWebApp\\FidenzWebApp.csproj|solutionrelative:fidenzwebapp\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D723EFA-F066-4BE9-948E-2F4D25790E0E}|FidenzWebApp\\FidenzWebApp.csproj|c:\\fidenz training\\dotnet repo\\fidenzwebapp_dotnet\\fidenzwebapp\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2D723EFA-F066-4BE9-948E-2F4D25790E0E}|FidenzWebApp\\FidenzWebApp.csproj|solutionrelative:fidenzwebapp\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D723EFA-F066-4BE9-948E-2F4D25790E0E}|FidenzWebApp\\FidenzWebApp.csproj|c:\\fidenz training\\dotnet repo\\fidenzwebapp_dotnet\\fidenzwebapp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2D723EFA-F066-4BE9-948E-2F4D25790E0E}|FidenzWebApp\\FidenzWebApp.csproj|solutionrelative:fidenzwebapp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2131EFB-54C5-453E-8DC0-FAC55CFFB959}|FidenzApp.Application\\FidenzApp.Application.csproj|c:\\fidenz training\\dotnet repo\\fidenzwebapp_dotnet\\fidenzapp.application\\services\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E2131EFB-54C5-453E-8DC0-FAC55CFFB959}|FidenzApp.Application\\FidenzApp.Application.csproj|solutionrelative:fidenzapp.application\\services\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D723EFA-F066-4BE9-948E-2F4D25790E0E}|FidenzWebApp\\FidenzWebApp.csproj|c:\\fidenz training\\dotnet repo\\fidenzwebapp_dotnet\\fidenzwebapp\\controllers\\api controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D723EFA-F066-4BE9-948E-2F4D25790E0E}|FidenzWebApp\\FidenzWebApp.csproj|solutionrelative:fidenzwebapp\\controllers\\api controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2131EFB-54C5-453E-8DC0-FAC55CFFB959}|FidenzApp.Application\\FidenzApp.Application.csproj|c:\\fidenz training\\dotnet repo\\fidenzwebapp_dotnet\\fidenzapp.application\\interfaces\\services\\icustomerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E2131EFB-54C5-453E-8DC0-FAC55CFFB959}|FidenzApp.Application\\FidenzApp.Application.csproj|solutionrelative:fidenzapp.application\\interfaces\\services\\icustomerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2131EFB-54C5-453E-8DC0-FAC55CFFB959}|FidenzApp.Application\\FidenzApp.Application.csproj|c:\\fidenz training\\dotnet repo\\fidenzwebapp_dotnet\\fidenzapp.application\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E2131EFB-54C5-453E-8DC0-FAC55CFFB959}|FidenzApp.Application\\FidenzApp.Application.csproj|solutionrelative:fidenzapp.application\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2131EFB-54C5-453E-8DC0-FAC55CFFB959}|FidenzApp.Application\\FidenzApp.Application.csproj|c:\\fidenz training\\dotnet repo\\fidenzwebapp_dotnet\\fidenzapp.application\\interfaces\\services\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E2131EFB-54C5-453E-8DC0-FAC55CFFB959}|FidenzApp.Application\\FidenzApp.Application.csproj|solutionrelative:fidenzapp.application\\interfaces\\services\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2131EFB-54C5-453E-8DC0-FAC55CFFB959}|FidenzApp.Application\\FidenzApp.Application.csproj|c:\\fidenz training\\dotnet repo\\fidenzwebapp_dotnet\\fidenzapp.application\\dto\\updatecustomerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E2131EFB-54C5-453E-8DC0-FAC55CFFB959}|FidenzApp.Application\\FidenzApp.Application.csproj|solutionrelative:fidenzapp.application\\dto\\updatecustomerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}|ReadMe{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}|C:\\fidenz training\\Dotnet Repo\\FidenzWebAPP_DotNet\\ReadMe.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}|ReadMe{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}|solutionrelative:ReadMe.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D723EFA-F066-4BE9-948E-2F4D25790E0E}|FidenzWebApp\\FidenzWebApp.csproj|c:\\fidenz training\\dotnet repo\\fidenzwebapp_dotnet\\fidenzwebapp\\controllers\\mvc controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D723EFA-F066-4BE9-948E-2F4D25790E0E}|FidenzWebApp\\FidenzWebApp.csproj|solutionrelative:fidenzwebapp\\controllers\\mvc controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2D723EFA-F066-4BE9-948E-2F4D25790E0E}|FidenzWebApp\\FidenzWebApp.csproj|c:\\fidenz training\\dotnet repo\\fidenzwebapp_dotnet\\fidenzwebapp\\controllers\\api controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2D723EFA-F066-4BE9-948E-2F4D25790E0E}|FidenzWebApp\\FidenzWebApp.csproj|solutionrelative:fidenzwebapp\\controllers\\api controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2D723EFA-F066-4BE9-948E-2F4D25790E0E}|FidenzWebApp\\FidenzWebApp.csproj|c:\\fidenz training\\dotnet repo\\fidenzwebapp_dotnet\\fidenzwebapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2D723EFA-F066-4BE9-948E-2F4D25790E0E}|FidenzWebApp\\FidenzWebApp.csproj|solutionrelative:fidenzwebapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2D723EFA-F066-4BE9-948E-2F4D25790E0E}|FidenzWebApp\\FidenzWebApp.csproj|c:\\fidenz training\\dotnet repo\\fidenzwebapp_dotnet\\fidenzwebapp\\views\\home\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -49,10 +85,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{2D723EFA-F066-4BE9-948E-2F4D25790E0E}|FidenzWebApp\\FidenzWebApp.csproj|c:\\fidenz training\\dotnet repo\\fidenzwebapp_dotnet\\fidenzwebapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{2D723EFA-F066-4BE9-948E-2F4D25790E0E}|FidenzWebApp\\FidenzWebApp.csproj|solutionrelative:fidenzwebapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}|ReadMe{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}|C:\\fidenz training\\Dotnet Repo\\FidenzWebAPP_DotNet\\ReadMe.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}|ReadMe{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}|solutionrelative:ReadMe.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{428D3EF9-1336-4AC9-AF14-C3639F7FAF09}|FidenzApp.Infranstructure\\FidenzApp.Infranstructure.csproj|c:\\fidenz training\\dotnet repo\\fidenzwebapp_dotnet\\fidenzapp.infranstructure\\repositories\\customerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -79,16 +111,8 @@
       "RelativeMoniker": "D:0:0:{E2131EFB-54C5-453E-8DC0-FAC55CFFB959}|FidenzApp.Application\\FidenzApp.Application.csproj|solutionrelative:fidenzapp.application\\interfaces\\unitofwork\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E2131EFB-54C5-453E-8DC0-FAC55CFFB959}|FidenzApp.Application\\FidenzApp.Application.csproj|c:\\fidenz training\\dotnet repo\\fidenzwebapp_dotnet\\fidenzapp.application\\interfaces\\services\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E2131EFB-54C5-453E-8DC0-FAC55CFFB959}|FidenzApp.Application\\FidenzApp.Application.csproj|solutionrelative:fidenzapp.application\\interfaces\\services\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E2131EFB-54C5-453E-8DC0-FAC55CFFB959}|FidenzApp.Application\\FidenzApp.Application.csproj|c:\\fidenz training\\dotnet repo\\fidenzwebapp_dotnet\\fidenzapp.application\\interfaces\\services\\iservices\\ijwttokengenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E2131EFB-54C5-453E-8DC0-FAC55CFFB959}|FidenzApp.Application\\FidenzApp.Application.csproj|solutionrelative:fidenzapp.application\\interfaces\\services\\iservices\\ijwttokengenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E2131EFB-54C5-453E-8DC0-FAC55CFFB959}|FidenzApp.Application\\FidenzApp.Application.csproj|c:\\fidenz training\\dotnet repo\\fidenzwebapp_dotnet\\fidenzapp.application\\interfaces\\services\\iservices\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E2131EFB-54C5-453E-8DC0-FAC55CFFB959}|FidenzApp.Application\\FidenzApp.Application.csproj|solutionrelative:fidenzapp.application\\interfaces\\services\\iservices\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E2131EFB-54C5-453E-8DC0-FAC55CFFB959}|FidenzApp.Application\\FidenzApp.Application.csproj|c:\\fidenz training\\dotnet repo\\fidenzwebapp_dotnet\\fidenzapp.application\\interfaces\\services\\ijwttokengenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E2131EFB-54C5-453E-8DC0-FAC55CFFB959}|FidenzApp.Application\\FidenzApp.Application.csproj|solutionrelative:fidenzapp.application\\interfaces\\services\\ijwttokengenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E2131EFB-54C5-453E-8DC0-FAC55CFFB959}|FidenzApp.Application\\FidenzApp.Application.csproj|c:\\fidenz training\\dotnet repo\\fidenzwebapp_dotnet\\fidenzapp.application\\interfaces\\repositories\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -97,10 +121,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{E2131EFB-54C5-453E-8DC0-FAC55CFFB959}|FidenzApp.Application\\FidenzApp.Application.csproj|c:\\fidenz training\\dotnet repo\\fidenzwebapp_dotnet\\fidenzapp.application\\interfaces\\repositories\\icustomerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E2131EFB-54C5-453E-8DC0-FAC55CFFB959}|FidenzApp.Application\\FidenzApp.Application.csproj|solutionrelative:fidenzapp.application\\interfaces\\repositories\\icustomerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E2131EFB-54C5-453E-8DC0-FAC55CFFB959}|FidenzApp.Application\\FidenzApp.Application.csproj|c:\\fidenz training\\dotnet repo\\fidenzwebapp_dotnet\\fidenzapp.application\\dto\\updatecustomerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E2131EFB-54C5-453E-8DC0-FAC55CFFB959}|FidenzApp.Application\\FidenzApp.Application.csproj|solutionrelative:fidenzapp.application\\dto\\updatecustomerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E2131EFB-54C5-453E-8DC0-FAC55CFFB959}|FidenzApp.Application\\FidenzApp.Application.csproj|c:\\fidenz training\\dotnet repo\\fidenzwebapp_dotnet\\fidenzapp.application\\dto\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -118,61 +138,194 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "Distance.cshtml",
               "DocumentMoniker": "C:\\fidenz training\\Dotnet Repo\\FidenzWebAPP_DotNet\\FidenzWebApp\\Views\\Home\\Distance.cshtml",
               "RelativeDocumentMoniker": "FidenzWebApp\\Views\\Home\\Distance.cshtml",
               "ToolTip": "C:\\fidenz training\\Dotnet Repo\\FidenzWebAPP_DotNet\\FidenzWebApp\\Views\\Home\\Distance.cshtml",
               "RelativeToolTip": "FidenzWebApp\\Views\\Home\\Distance.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADEAAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-09-24T10:22:16.559Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "C:\\fidenz training\\Dotnet Repo\\FidenzWebAPP_DotNet\\FidenzWebApp\\Views\\Shared\\Error.cshtml",
+              "RelativeDocumentMoniker": "FidenzWebApp\\Views\\Shared\\Error.cshtml",
+              "ToolTip": "C:\\fidenz training\\Dotnet Repo\\FidenzWebAPP_DotNet\\FidenzWebApp\\Views\\Shared\\Error.cshtml",
+              "RelativeToolTip": "FidenzWebApp\\Views\\Shared\\Error.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-25T05:07:47.94Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\fidenz training\\Dotnet Repo\\FidenzWebAPP_DotNet\\FidenzWebApp\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "FidenzWebApp\\Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\fidenz training\\Dotnet Repo\\FidenzWebAPP_DotNet\\FidenzWebApp\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "FidenzWebApp\\Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-25T05:07:30.726Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\fidenz training\\Dotnet Repo\\FidenzWebAPP_DotNet\\FidenzWebApp\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "FidenzWebApp\\Views\\_ViewStart.cshtml",
+              "ToolTip": "C:\\fidenz training\\Dotnet Repo\\FidenzWebAPP_DotNet\\FidenzWebApp\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "FidenzWebApp\\Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-25T05:07:50.082Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\fidenz training\\Dotnet Repo\\FidenzWebAPP_DotNet\\FidenzWebApp\\Program.cs",
+              "RelativeDocumentMoniker": "FidenzWebApp\\Program.cs",
+              "ToolTip": "C:\\fidenz training\\Dotnet Repo\\FidenzWebAPP_DotNet\\FidenzWebApp\\Program.cs",
+              "RelativeToolTip": "FidenzWebApp\\Program.cs",
+              "ViewState": "AgIAAGwAAAAAAAAAAAAAAHYAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-24T10:36:38.932Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "_ValidationScriptsPartial.cshtml",
+              "DocumentMoniker": "C:\\fidenz training\\Dotnet Repo\\FidenzWebAPP_DotNet\\FidenzWebApp\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeDocumentMoniker": "FidenzWebApp\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ToolTip": "C:\\fidenz training\\Dotnet Repo\\FidenzWebAPP_DotNet\\FidenzWebApp\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeToolTip": "FidenzWebApp\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-25T05:07:51.438Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\fidenz training\\Dotnet Repo\\FidenzWebAPP_DotNet\\FidenzWebApp\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "FidenzWebApp\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\fidenz training\\Dotnet Repo\\FidenzWebAPP_DotNet\\FidenzWebApp\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "FidenzWebApp\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-25T05:07:58.439Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CustomerService.cs",
+              "DocumentMoniker": "C:\\fidenz training\\Dotnet Repo\\FidenzWebAPP_DotNet\\FidenzApp.Application\\Services\\CustomerService.cs",
+              "RelativeDocumentMoniker": "FidenzApp.Application\\Services\\CustomerService.cs",
+              "ToolTip": "C:\\fidenz training\\Dotnet Repo\\FidenzWebAPP_DotNet\\FidenzApp.Application\\Services\\CustomerService.cs",
+              "RelativeToolTip": "FidenzApp.Application\\Services\\CustomerService.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAYwKAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-24T11:22:09.765Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "CustomerController.cs",
               "DocumentMoniker": "C:\\fidenz training\\Dotnet Repo\\FidenzWebAPP_DotNet\\FidenzWebApp\\Controllers\\API Controllers\\CustomerController.cs",
               "RelativeDocumentMoniker": "FidenzWebApp\\Controllers\\API Controllers\\CustomerController.cs",
-              "ToolTip": "C:\\fidenz training\\Dotnet Repo\\FidenzWebAPP_DotNet\\FidenzWebApp\\Controllers\\API Controllers\\CustomerController.cs*",
-              "RelativeToolTip": "FidenzWebApp\\Controllers\\API Controllers\\CustomerController.cs*",
-              "ViewState": "AgIAAFIAAAAAAAAAAAASwFcAAAAAAAAAAAAAAA==",
+              "ToolTip": "C:\\fidenz training\\Dotnet Repo\\FidenzWebAPP_DotNet\\FidenzWebApp\\Controllers\\API Controllers\\CustomerController.cs",
+              "RelativeToolTip": "FidenzWebApp\\Controllers\\API Controllers\\CustomerController.cs",
+              "ViewState": "AgIAAE8AAAAAAAAAAAAAAGAAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-24T10:19:08.214Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CustomerService.cs",
-              "DocumentMoniker": "C:\\fidenz training\\Dotnet Repo\\FidenzWebAPP_DotNet\\FidenzApp.Application\\Interfaces\\Services\\services\\CustomerService.cs",
-              "RelativeDocumentMoniker": "FidenzApp.Application\\Interfaces\\Services\\services\\CustomerService.cs",
-              "ToolTip": "C:\\fidenz training\\Dotnet Repo\\FidenzWebAPP_DotNet\\FidenzApp.Application\\Interfaces\\Services\\services\\CustomerService.cs",
-              "RelativeToolTip": "FidenzApp.Application\\Interfaces\\Services\\services\\CustomerService.cs",
-              "ViewState": "AgIAAIoAAAAAAAAAAADwv54AAAALAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-24T11:22:09.765Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 9,
               "Title": "ICustomerService.cs",
-              "DocumentMoniker": "C:\\fidenz training\\Dotnet Repo\\FidenzWebAPP_DotNet\\FidenzApp.Application\\Interfaces\\Services\\IServices\\ICustomerService.cs",
-              "RelativeDocumentMoniker": "FidenzApp.Application\\Interfaces\\Services\\IServices\\ICustomerService.cs",
-              "ToolTip": "C:\\fidenz training\\Dotnet Repo\\FidenzWebAPP_DotNet\\FidenzApp.Application\\Interfaces\\Services\\IServices\\ICustomerService.cs",
-              "RelativeToolTip": "FidenzApp.Application\\Interfaces\\Services\\IServices\\ICustomerService.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABMAAAAMAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\fidenz training\\Dotnet Repo\\FidenzWebAPP_DotNet\\FidenzApp.Application\\Interfaces\\Services\\ICustomerService.cs",
+              "RelativeDocumentMoniker": "FidenzApp.Application\\Interfaces\\Services\\ICustomerService.cs",
+              "ToolTip": "C:\\fidenz training\\Dotnet Repo\\FidenzWebAPP_DotNet\\FidenzApp.Application\\Interfaces\\Services\\ICustomerService.cs",
+              "RelativeToolTip": "FidenzApp.Application\\Interfaces\\Services\\ICustomerService.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAzwBUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-22T12:26:47.319Z"
+              "WhenOpened": "2025-09-22T12:26:47.319Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 10,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\fidenz training\\Dotnet Repo\\FidenzWebAPP_DotNet\\FidenzApp.Application\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "FidenzApp.Application\\Services\\AuthService.cs",
+              "ToolTip": "C:\\fidenz training\\Dotnet Repo\\FidenzWebAPP_DotNet\\FidenzApp.Application\\Services\\AuthService.cs",
+              "RelativeToolTip": "FidenzApp.Application\\Services\\AuthService.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-22T12:26:51.26Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "IAuthService.cs",
+              "DocumentMoniker": "C:\\fidenz training\\Dotnet Repo\\FidenzWebAPP_DotNet\\FidenzApp.Application\\Interfaces\\Services\\IAuthService.cs",
+              "RelativeDocumentMoniker": "FidenzApp.Application\\Interfaces\\Services\\IAuthService.cs",
+              "ToolTip": "C:\\fidenz training\\Dotnet Repo\\FidenzWebAPP_DotNet\\FidenzApp.Application\\Interfaces\\Services\\IAuthService.cs",
+              "RelativeToolTip": "FidenzApp.Application\\Interfaces\\Services\\IAuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-22T12:26:46.068Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "updateCustomerDto.cs",
+              "DocumentMoniker": "C:\\fidenz training\\Dotnet Repo\\FidenzWebAPP_DotNet\\FidenzApp.Application\\DTO\\updateCustomerDto.cs",
+              "RelativeDocumentMoniker": "FidenzApp.Application\\DTO\\updateCustomerDto.cs",
+              "ToolTip": "C:\\fidenz training\\Dotnet Repo\\FidenzWebAPP_DotNet\\FidenzApp.Application\\DTO\\updateCustomerDto.cs",
+              "RelativeToolTip": "FidenzApp.Application\\DTO\\updateCustomerDto.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAkAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-22T12:26:37.76Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ReadMe.txt",
+              "DocumentMoniker": "C:\\fidenz training\\Dotnet Repo\\FidenzWebAPP_DotNet\\ReadMe.txt",
+              "RelativeDocumentMoniker": "ReadMe.txt",
+              "ToolTip": "C:\\fidenz training\\Dotnet Repo\\FidenzWebAPP_DotNet\\ReadMe.txt",
+              "RelativeToolTip": "ReadMe.txt",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABsAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-09-22T12:28:54.188Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\fidenz training\\Dotnet Repo\\FidenzWebAPP_DotNet\\FidenzWebApp\\Controllers\\MVC Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "FidenzWebApp\\Controllers\\MVC Controllers\\HomeController.cs",
@@ -180,11 +333,12 @@
               "RelativeToolTip": "FidenzWebApp\\Controllers\\MVC Controllers\\HomeController.cs",
               "ViewState": "AgIAAG0AAAAAAAAAAAAtwI8AAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-24T10:19:01.644Z"
+              "WhenOpened": "2025-09-24T10:19:01.644Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 15,
               "Title": "AuthController.cs",
               "DocumentMoniker": "C:\\fidenz training\\Dotnet Repo\\FidenzWebAPP_DotNet\\FidenzWebApp\\Controllers\\API Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "FidenzWebApp\\Controllers\\API Controllers\\AuthController.cs",
@@ -192,23 +346,12 @@
               "RelativeToolTip": "FidenzWebApp\\Controllers\\API Controllers\\AuthController.cs",
               "ViewState": "AgIAABsAAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-24T10:19:12.909Z"
+              "WhenOpened": "2025-09-24T10:19:12.909Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\fidenz training\\Dotnet Repo\\FidenzWebAPP_DotNet\\FidenzWebApp\\Program.cs",
-              "RelativeDocumentMoniker": "FidenzWebApp\\Program.cs",
-              "ToolTip": "C:\\fidenz training\\Dotnet Repo\\FidenzWebAPP_DotNet\\FidenzWebApp\\Program.cs",
-              "RelativeToolTip": "FidenzWebApp\\Program.cs",
-              "ViewState": "AgIAAJEAAAAAAAAAAAAAAIIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-24T10:36:38.932Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 20,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\fidenz training\\Dotnet Repo\\FidenzWebAPP_DotNet\\FidenzWebApp\\appsettings.json",
               "RelativeDocumentMoniker": "FidenzWebApp\\appsettings.json",
@@ -216,23 +359,25 @@
               "RelativeToolTip": "FidenzWebApp\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-09-24T10:19:28.922Z"
+              "WhenOpened": "2025-09-24T10:19:28.922Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 18,
               "Title": "ViewInfo.cshtml",
               "DocumentMoniker": "C:\\fidenz training\\Dotnet Repo\\FidenzWebAPP_DotNet\\FidenzWebApp\\Views\\Home\\ViewInfo.cshtml",
               "RelativeDocumentMoniker": "FidenzWebApp\\Views\\Home\\ViewInfo.cshtml",
               "ToolTip": "C:\\fidenz training\\Dotnet Repo\\FidenzWebAPP_DotNet\\FidenzWebApp\\Views\\Home\\ViewInfo.cshtml",
               "RelativeToolTip": "FidenzWebApp\\Views\\Home\\ViewInfo.cshtml",
-              "ViewState": "AgIAAD8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADwAAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-24T10:21:03.138Z"
+              "WhenOpened": "2025-09-24T10:21:03.138Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 16,
               "Title": "Login.cshtml",
               "DocumentMoniker": "C:\\fidenz training\\Dotnet Repo\\FidenzWebAPP_DotNet\\FidenzWebApp\\Views\\Home\\Login.cshtml",
               "RelativeDocumentMoniker": "FidenzWebApp\\Views\\Home\\Login.cshtml",
@@ -240,11 +385,12 @@
               "RelativeToolTip": "FidenzWebApp\\Views\\Home\\Login.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-24T10:34:21.224Z"
+              "WhenOpened": "2025-09-24T10:34:21.224Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 17,
               "Title": "Update.cshtml",
               "DocumentMoniker": "C:\\fidenz training\\Dotnet Repo\\FidenzWebAPP_DotNet\\FidenzWebApp\\Views\\Home\\Update.cshtml",
               "RelativeDocumentMoniker": "FidenzWebApp\\Views\\Home\\Update.cshtml",
@@ -252,11 +398,12 @@
               "RelativeToolTip": "FidenzWebApp\\Views\\Home\\Update.cshtml",
               "ViewState": "AgIAAC4AAAAAAAAAAAAwwDwAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-24T10:21:11.685Z"
+              "WhenOpened": "2025-09-24T10:21:11.685Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 19,
               "Title": "JwtTokenGenerator.cs",
               "DocumentMoniker": "C:\\fidenz training\\Dotnet Repo\\FidenzWebAPP_DotNet\\FidenzApp.Infranstructure\\Identity\\JwtTokenGenerator.cs",
               "RelativeDocumentMoniker": "FidenzApp.Infranstructure\\Identity\\JwtTokenGenerator.cs",
@@ -264,59 +411,51 @@
               "RelativeToolTip": "FidenzApp.Infranstructure\\Identity\\JwtTokenGenerator.cs",
               "ViewState": "AgIAABwAAAAAAAAAAAAvwCwAAABSAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-22T12:27:15.034Z"
+              "WhenOpened": "2025-09-22T12:27:15.034Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "ReadMe.txt",
-              "DocumentMoniker": "C:\\fidenz training\\Dotnet Repo\\FidenzWebAPP_DotNet\\ReadMe.txt",
-              "RelativeDocumentMoniker": "ReadMe.txt",
-              "ToolTip": "C:\\fidenz training\\Dotnet Repo\\FidenzWebAPP_DotNet\\ReadMe.txt",
-              "RelativeToolTip": "ReadMe.txt",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAwBsAAAB3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2025-09-22T12:28:54.188Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 21,
               "Title": "CustomerRepository.cs",
               "DocumentMoniker": "C:\\fidenz training\\Dotnet Repo\\FidenzWebAPP_DotNet\\FidenzApp.Infranstructure\\Repositories\\CustomerRepository.cs",
               "RelativeDocumentMoniker": "FidenzApp.Infranstructure\\Repositories\\CustomerRepository.cs",
               "ToolTip": "C:\\fidenz training\\Dotnet Repo\\FidenzWebAPP_DotNet\\FidenzApp.Infranstructure\\Repositories\\CustomerRepository.cs",
               "RelativeToolTip": "FidenzApp.Infranstructure\\Repositories\\CustomerRepository.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABEAAAAAAAAAAAAxwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-22T12:27:22.614Z"
+              "WhenOpened": "2025-09-22T12:27:22.614Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 22,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "C:\\fidenz training\\Dotnet Repo\\FidenzWebAPP_DotNet\\FidenzApp.Infranstructure\\Data\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "FidenzApp.Infranstructure\\Data\\ApplicationDbContext.cs",
               "ToolTip": "C:\\fidenz training\\Dotnet Repo\\FidenzWebAPP_DotNet\\FidenzApp.Infranstructure\\Data\\ApplicationDbContext.cs",
               "RelativeToolTip": "FidenzApp.Infranstructure\\Data\\ApplicationDbContext.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-22T12:27:12.195Z"
+              "WhenOpened": "2025-09-22T12:27:12.195Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 23,
               "Title": "Customers.cs",
               "DocumentMoniker": "C:\\fidenz training\\Dotnet Repo\\FidenzWebAPP_DotNet\\FidenzApp.Domain\\Entities\\Customers.cs",
               "RelativeDocumentMoniker": "FidenzApp.Domain\\Entities\\Customers.cs",
               "ToolTip": "C:\\fidenz training\\Dotnet Repo\\FidenzWebAPP_DotNet\\FidenzApp.Domain\\Entities\\Customers.cs",
               "RelativeToolTip": "FidenzApp.Domain\\Entities\\Customers.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABYAAAAAAAAAAAA/wAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-22T12:27:04.217Z"
+              "WhenOpened": "2025-09-22T12:27:04.217Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 24,
               "Title": "ApplicationUser .cs",
               "DocumentMoniker": "C:\\fidenz training\\Dotnet Repo\\FidenzWebAPP_DotNet\\FidenzApp.Domain\\Entities\\ApplicationUser .cs",
               "RelativeDocumentMoniker": "FidenzApp.Domain\\Entities\\ApplicationUser .cs",
@@ -324,11 +463,12 @@
               "RelativeToolTip": "FidenzApp.Domain\\Entities\\ApplicationUser .cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-22T12:27:03.167Z"
+              "WhenOpened": "2025-09-22T12:27:03.167Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 25,
               "Title": "Address.cs",
               "DocumentMoniker": "C:\\fidenz training\\Dotnet Repo\\FidenzWebAPP_DotNet\\FidenzApp.Domain\\Entities\\Address.cs",
               "RelativeDocumentMoniker": "FidenzApp.Domain\\Entities\\Address.cs",
@@ -336,59 +476,38 @@
               "RelativeToolTip": "FidenzApp.Domain\\Entities\\Address.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-22T12:27:01.838Z"
+              "WhenOpened": "2025-09-22T12:27:01.838Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 26,
               "Title": "IUnitOfWork.cs",
               "DocumentMoniker": "C:\\fidenz training\\Dotnet Repo\\FidenzWebAPP_DotNet\\FidenzApp.Application\\Interfaces\\UnitOfWork\\IUnitOfWork.cs",
               "RelativeDocumentMoniker": "FidenzApp.Application\\Interfaces\\UnitOfWork\\IUnitOfWork.cs",
               "ToolTip": "C:\\fidenz training\\Dotnet Repo\\FidenzWebAPP_DotNet\\FidenzApp.Application\\Interfaces\\UnitOfWork\\IUnitOfWork.cs",
               "RelativeToolTip": "FidenzApp.Application\\Interfaces\\UnitOfWork\\IUnitOfWork.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAxwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-22T12:26:56.612Z"
+              "WhenOpened": "2025-09-22T12:26:56.612Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "AuthService.cs",
-              "DocumentMoniker": "C:\\fidenz training\\Dotnet Repo\\FidenzWebAPP_DotNet\\FidenzApp.Application\\Interfaces\\Services\\services\\AuthService.cs",
-              "RelativeDocumentMoniker": "FidenzApp.Application\\Interfaces\\Services\\services\\AuthService.cs",
-              "ToolTip": "C:\\fidenz training\\Dotnet Repo\\FidenzWebAPP_DotNet\\FidenzApp.Application\\Interfaces\\Services\\services\\AuthService.cs",
-              "RelativeToolTip": "FidenzApp.Application\\Interfaces\\Services\\services\\AuthService.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-22T12:26:51.26Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 27,
               "Title": "IJwtTokenGenerator.cs",
-              "DocumentMoniker": "C:\\fidenz training\\Dotnet Repo\\FidenzWebAPP_DotNet\\FidenzApp.Application\\Interfaces\\Services\\IServices\\IJwtTokenGenerator.cs",
-              "RelativeDocumentMoniker": "FidenzApp.Application\\Interfaces\\Services\\IServices\\IJwtTokenGenerator.cs",
-              "ToolTip": "C:\\fidenz training\\Dotnet Repo\\FidenzWebAPP_DotNet\\FidenzApp.Application\\Interfaces\\Services\\IServices\\IJwtTokenGenerator.cs",
-              "RelativeToolTip": "FidenzApp.Application\\Interfaces\\Services\\IServices\\IJwtTokenGenerator.cs",
+              "DocumentMoniker": "C:\\fidenz training\\Dotnet Repo\\FidenzWebAPP_DotNet\\FidenzApp.Application\\Interfaces\\Services\\IJwtTokenGenerator.cs",
+              "RelativeDocumentMoniker": "FidenzApp.Application\\Interfaces\\Services\\IJwtTokenGenerator.cs",
+              "ToolTip": "C:\\fidenz training\\Dotnet Repo\\FidenzWebAPP_DotNet\\FidenzApp.Application\\Interfaces\\Services\\IJwtTokenGenerator.cs",
+              "RelativeToolTip": "FidenzApp.Application\\Interfaces\\Services\\IJwtTokenGenerator.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-22T12:26:48.646Z"
+              "WhenOpened": "2025-09-22T12:26:48.646Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "IAuthService.cs",
-              "DocumentMoniker": "C:\\fidenz training\\Dotnet Repo\\FidenzWebAPP_DotNet\\FidenzApp.Application\\Interfaces\\Services\\IServices\\IAuthService.cs",
-              "RelativeDocumentMoniker": "FidenzApp.Application\\Interfaces\\Services\\IServices\\IAuthService.cs",
-              "ToolTip": "C:\\fidenz training\\Dotnet Repo\\FidenzWebAPP_DotNet\\FidenzApp.Application\\Interfaces\\Services\\IServices\\IAuthService.cs",
-              "RelativeToolTip": "FidenzApp.Application\\Interfaces\\Services\\IServices\\IAuthService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-22T12:26:46.068Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 28,
               "Title": "IRepository.cs",
               "DocumentMoniker": "C:\\fidenz training\\Dotnet Repo\\FidenzWebAPP_DotNet\\FidenzApp.Application\\Interfaces\\Repositories\\IRepository.cs",
               "RelativeDocumentMoniker": "FidenzApp.Application\\Interfaces\\Repositories\\IRepository.cs",
@@ -396,11 +515,12 @@
               "RelativeToolTip": "FidenzApp.Application\\Interfaces\\Repositories\\IRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-22T12:26:42.645Z"
+              "WhenOpened": "2025-09-22T12:26:42.645Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 29,
               "Title": "ICustomerRepository.cs",
               "DocumentMoniker": "C:\\fidenz training\\Dotnet Repo\\FidenzWebAPP_DotNet\\FidenzApp.Application\\Interfaces\\Repositories\\ICustomerRepository.cs",
               "RelativeDocumentMoniker": "FidenzApp.Application\\Interfaces\\Repositories\\ICustomerRepository.cs",
@@ -408,23 +528,12 @@
               "RelativeToolTip": "FidenzApp.Application\\Interfaces\\Repositories\\ICustomerRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-22T12:26:41.271Z"
+              "WhenOpened": "2025-09-22T12:26:41.271Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "updateCustomerDto.cs",
-              "DocumentMoniker": "C:\\fidenz training\\Dotnet Repo\\FidenzWebAPP_DotNet\\FidenzApp.Application\\DTO\\updateCustomerDto.cs",
-              "RelativeDocumentMoniker": "FidenzApp.Application\\DTO\\updateCustomerDto.cs",
-              "ToolTip": "C:\\fidenz training\\Dotnet Repo\\FidenzWebAPP_DotNet\\FidenzApp.Application\\DTO\\updateCustomerDto.cs",
-              "RelativeToolTip": "FidenzApp.Application\\DTO\\updateCustomerDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-22T12:26:37.76Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 30,
               "Title": "RegisterDto.cs",
               "DocumentMoniker": "C:\\fidenz training\\Dotnet Repo\\FidenzWebAPP_DotNet\\FidenzApp.Application\\DTO\\RegisterDto.cs",
               "RelativeDocumentMoniker": "FidenzApp.Application\\DTO\\RegisterDto.cs",
@@ -432,11 +541,12 @@
               "RelativeToolTip": "FidenzApp.Application\\DTO\\RegisterDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-22T12:26:35.772Z"
+              "WhenOpened": "2025-09-22T12:26:35.772Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 31,
               "Title": "LoginDto.cs",
               "DocumentMoniker": "C:\\fidenz training\\Dotnet Repo\\FidenzWebAPP_DotNet\\FidenzApp.Application\\DTO\\LoginDto.cs",
               "RelativeDocumentMoniker": "FidenzApp.Application\\DTO\\LoginDto.cs",
@@ -444,7 +554,8 @@
               "RelativeToolTip": "FidenzApp.Application\\DTO\\LoginDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-22T12:26:33.024Z"
+              "WhenOpened": "2025-09-22T12:26:33.024Z",
+              "EditorCaption": ""
             }
           ]
         }

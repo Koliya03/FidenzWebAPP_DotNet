@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FidenzApp.Application.Interfaces.Services.IServices
+namespace FidenzApp.Application.Interfaces.Services
 {
     public interface IJwtTokenGenerator
     {

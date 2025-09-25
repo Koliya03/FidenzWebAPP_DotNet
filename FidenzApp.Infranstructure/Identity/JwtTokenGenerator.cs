@@ -1,4 +1,4 @@
-﻿using FidenzApp.Application.Interfaces.Services.IServices;
+﻿using FidenzApp.Application.Interfaces.Services;
 using FidenzApp.Domain.Entities;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Configuration;
