@@ -21,7 +21,6 @@ using static System.Net.Mime.MediaTypeNames;
 namespace FidenzWebApp.Controllers
 {
     [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
-
     [Route("api/[controller]")]
     [ApiController]
     public class CustomerController : ControllerBase

@@ -23,7 +23,8 @@ namespace FidenzApp.Domain.Data
             modelBuilder.Entity<Customers>(e =>
             {
                 e.HasKey(c => c._id);
-                e.OwnsOne(c => c.address);
+                e.OwnsOne(c => c.address,a => { a.HasIndex(p => p.zipcode);}
+                );
             });
 
         }

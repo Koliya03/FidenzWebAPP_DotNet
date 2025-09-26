@@ -1,5 +1,6 @@
 using FidenzApp.Application.Interfaces.Services;
 using FidenzApp.Application.Interfaces.UnitOfWork;
+using FidenzApp.Application.Mapper;
 using FidenzApp.Application.Services;
 using FidenzApp.Domain.Data;
 using FidenzApp.Domain.Entities;
@@ -9,6 +10,7 @@ using FidenzApp.Infranstructure.Seed;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using System.Security.Claims;
@@ -76,7 +78,9 @@ builder.Services.AddScoped<ICustomerService, CustomerService>();
 builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<IJwtTokenGenerator,JwtTokenGenerator>();
 builder.Services.AddScoped<ISeeder, Seed>();
-
+//builder.Services.AddAutoMapper(typeof(MappingProfile));
+builder.Services.AddAutoMapper(cfg => { },
+    typeof(MappingProfile).Assembly);
 
 builder.Services.ConfigureApplicationCookie(options =>
 {
@@ -136,6 +140,9 @@ var app = builder.Build();
 
 using (var scope = app.Services.CreateScope())
 {
+    var db = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
+    await db.Database.MigrateAsync();
+
     var seeder = scope.ServiceProvider.GetRequiredService<ISeeder>();
     await seeder.SeedUserAsync();
     await seeder.SeedCustomerAsync();

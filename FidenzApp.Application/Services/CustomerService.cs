@@ -1,8 +1,10 @@
-﻿using FidenzApp.Application.DTO;
+﻿using AutoMapper;
+using FidenzApp.Application.DTO;
 using FidenzApp.Application.Interfaces.Services;
 using FidenzApp.Application.Interfaces.UnitOfWork;
 using FidenzApp.Domain.Entities;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,59 +16,22 @@ namespace FidenzApp.Application.Services
     public class CustomerService : ICustomerService
     {
         private IUnitOfWork _unitOfWork;
+        private IMapper _mapper;
+           
+        
 
-        public CustomerService(IUnitOfWork unitOfWork)
+        public CustomerService(IUnitOfWork unitOfWork, IMapper mapper)
         {
             _unitOfWork = unitOfWork;
+            _mapper = mapper;
         }
 
-        private CustomerDto MapToDto(Customers c)
-        {
-          return  new CustomerDto
-            {
-                _id = c._id,
-                index = c.index,
-                age = c.age,
-                eyeColor = c.eyeColor,
-                name = c.name,
-                gender = c.gender,
-                company = c.company,
-                email = c.email,
-                phone = c.phone,
-                about = c.about,
-                registered = c.registered,
-                latitude = c.latitude,
-                longitude = c.longitude,
-                tags = c.tags ?? new List<string>(),
-                address = c.address == null ? null : new AddressDto
-                {
-                    number = c.address.number,
-                    street = c.address.street,
-                    city = c.address.city,
-                    state = c.address.state,
-                    zipcode = c.address.zipcode
-                }
-            }; 
-        }
-
-        private List<CustomerDto> MapToDto(IEnumerable<Customers> items)
-        {
-            var list = new List<CustomerDto>();
-            if (items == null) return list;
-
-            foreach (var c in items)
-            {
-                if (c != null)
-                    list.Add(MapToDto(c));
-            }
-            return list;
-        }
         public async Task<IEnumerable<CustomerDto>> GetAllAsync()
         {
             var customersList = await _unitOfWork.CustomerRepository.GetAllAsync();
             if (customersList.Count() > 0)
             {
-                return MapToDto(customersList);
+                return _mapper.Map<IEnumerable<CustomerDto>>(customersList);
 
             }
             else
@@ -75,31 +40,57 @@ namespace FidenzApp.Application.Services
             }
         }
 
+        //public async Task<IEnumerable<CustomerDto>> GetAllBySearchAsync(string search)
+        //{
+        //    var customersList = await _unitOfWork.CustomerRepository.GetAllAsync(c =>
+        //                                                c.name.Contains(search, StringComparison.OrdinalIgnoreCase)
+        //                                            || c.email.Contains(search, StringComparison.OrdinalIgnoreCase)
+        //                                            || c.phone.Contains(search, StringComparison.OrdinalIgnoreCase)
+        //                                            || c.company.Contains(search, StringComparison.OrdinalIgnoreCase)
+        //                                            || c.address.street.Contains(search, StringComparison.OrdinalIgnoreCase)
+        //                                            || c.address.city.Contains(search, StringComparison.OrdinalIgnoreCase)
+        //                                            || c.address.state.Contains(search, StringComparison.OrdinalIgnoreCase)
+        //                                            || c.address.zipcode.ToString().Contains(search)
+        //                                            || c.tags.Any(tag => tag.Contains(search, StringComparison.OrdinalIgnoreCase))
+
+
+        //        );
+
+        //    if (customersList.Count() > 0)
+        //    {
+        //        return _mapper.Map<IEnumerable<CustomerDto>>(customersList);
+
+        //    }
+        //    else
+        //    {
+        //        return new List<CustomerDto>();
+        //    }
+        //}
+
+
         public async Task<IEnumerable<CustomerDto>> GetAllBySearchAsync(string search)
         {
-            var customers = await _unitOfWork.CustomerRepository.GetAllAsync();
+            if (string.IsNullOrWhiteSpace(search))
+                return Array.Empty<CustomerDto>();
 
-            var customersListByDetails = customers.Where(c =>
-                                                        c.name.Contains(search, StringComparison.OrdinalIgnoreCase)
-                                                    || c.email.Contains(search, StringComparison.OrdinalIgnoreCase)
-                                                    || c.phone.Contains(search, StringComparison.OrdinalIgnoreCase)
-                                                    || c.company.Contains(search, StringComparison.OrdinalIgnoreCase)
-                                                    || c.address.street.Contains(search, StringComparison.OrdinalIgnoreCase)
-                                                    || c.address.city.Contains(search, StringComparison.OrdinalIgnoreCase)
-                                                    || c.address.state.Contains(search, StringComparison.OrdinalIgnoreCase)
-                                                    || c.address.zipcode.ToString().Contains(search)
-                                                    || c.tags.Any(tag => tag.Contains(search, StringComparison.OrdinalIgnoreCase))
-                                                    ).ToList();
+            var like = $"%{search.Trim()}%";
 
+            var customersList = await _unitOfWork.CustomerRepository.GetAllAsync(c =>
+                   EF.Functions.Like(c.name, like) ||
+                   EF.Functions.Like(c.email, like) ||
+                   EF.Functions.Like(c.phone, like) ||
+                   EF.Functions.Like(c.company, like) ||
+                   EF.Functions.Like(c.address.street, like) ||
+                   EF.Functions.Like(c.address.city, like) ||
+                   EF.Functions.Like(c.address.state, like) ||
+                   EF.Functions.Like(c.address.zipcode.ToString(), like) ||
+                   c.tags.Any(tag => EF.Functions.Like(tag,like))
+                   );
 
-            if (customersListByDetails.Count() > 0)
-            { 
-                return MapToDto(customersListByDetails);
-            }
-            else
-            {
-                return new List<CustomerDto>();
-            }
+            if (!customersList.Any())
+                return Array.Empty<CustomerDto>();
+
+            return _mapper.Map<IEnumerable<CustomerDto>>(customersList);
         }
 
         public async Task<CustomerDto?> GetCustomerByIdAsync(string id)
@@ -109,16 +100,13 @@ namespace FidenzApp.Application.Services
             {
                 return null;
             }
-            return MapToDto(customer);
-           
+            return _mapper.Map<CustomerDto>(customer);
         }
 
-        public async Task<IEnumerable<CustomerDto>> GetAllByZipAsync()
+        public async Task<IEnumerable<ZipGroupDto>> GetAllByZipAsync()
         {
-            var customers = await _unitOfWork.CustomerRepository.GetAllAsync();
-            var customersByZip = customers.Select(c => c)
-                .OrderBy(x => x.address.zipcode).ToList();
-            return MapToDto(customersByZip);
+            var customers = await _unitOfWork.CustomerRepository.GetAllByZipAsync();
+            return customers;
         }
 
         public async Task<ActionResult<double>> getDistance(string id, double latitude, double longitude)
@@ -160,5 +148,6 @@ namespace FidenzApp.Application.Services
             await _unitOfWork.CustomerRepository.saveAsync();
         }
 
+        
     }
 }

@@ -1,0 +1,52 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vs/
+.vscode/
+.idea/
+*.suo
+*.user
+*.userosscache
+
+# Build
+bin/
+obj/
+out/
+artifacts/
+publish/
+TestResults/
+log/
+logs/
+
+# NuGet
+packages/
+.nuget/
+*.nupkg
+*.snupkg
+
+# Rider/ReSharper
+_ReSharper*/
+*.DotSettings.user
+
+# Node / web assets
+node_modules/
+wwwroot/lib/
+wwwroot/dist/
+dist/
+build/
+
+# Coverage / temp
+*.coverage
+*.coveragexml
+coverage/
+.coverage/
+.coverlet/
+*.tmp
+*.orig
+
+# Secrets / local config
+appsettings.*.local.json
+appsettings.Local.json
+secrets.json

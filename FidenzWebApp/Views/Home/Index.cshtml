@@ -1,5 +1,4 @@
-﻿
-@model indexViewModel
+﻿@model List<FidenzApp.Application.DTO.CustomerDto>
 @using System.Linq
 
 <div class="d-flex justify-content-end align-items-center gap-2 mt-2 bg-white  box-shadow mb-3 py-3">
@@ -18,19 +17,9 @@
         <a asp-action="Index" class="mx-2  bi bi-arrow-clockwise btn border"></a>
     </form>
 
-    @if (Model.isGroupedByZip == false )
-    {
-        <a asp-controller="Home" asp-action="ZipSearch"
-        class="btn btn-outline-secondary">View all group By Zip Code</a>
-    }
-    else
-    {
-        <a asp-controller="Home" asp-action="Index"
-           class="btn btn-outline-success btn-success text-white">View all group By Zip Code</a>
-    }
-    
 
-    
+    <a asp-controller="Home" asp-action="GroupByZip"
+       class="btn btn-outline-success">View all group By Zip Code</a>
 
 </div>
 
@@ -44,14 +33,14 @@
     </div>
 </div>
 
-@if (Model == null || !Model.customerList.Any())
+@if (Model == null || !Model.Any())
 {
     <h1 class="alert mt-3 text-center">No results found.</h1>
 }
 else
 {
     <div class="row">
-        @foreach (var c in Model.customerList)
+        @foreach (var c in Model)
         {
             <div class="col col-sm-6 mb-3 mb-sm-0 pt-3">
                 <div class="card h-100 shadow-sm">
@@ -87,10 +76,6 @@ else
                             <li><strong>Phone:</strong> @c.phone</li>
                             <li><strong>Age:</strong> @c.age</li>
                             <li><strong>Eye color:</strong> @c.eyeColor</li>
-                            @if (Model.isGroupedByZip == true)
-                            {
-                                <li><strong>Zip Code:</strong> @c.address.zipcode</li>
-                            }
                         </ul>
                         <div class="d-flex p-3">
                             <div class="col-6 text-center">
@@ -119,3 +104,4 @@ else
         }
     </div>
 }
+

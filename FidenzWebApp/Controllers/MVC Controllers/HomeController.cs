@@ -1,9 +1,8 @@
-
-using Azure;
 using FidenzApp.Application.DTO;
 using FidenzApp.Application.Interfaces.Services;
 using FidenzApp.Domain.Entities;
 using FidenzWebApp.Models;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
@@ -15,6 +14,7 @@ using System.Threading.Tasks;
 
 namespace FidenzWebApp.Controllers
 {
+    //[Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
     [Authorize]
     public class HomeController : Controller
     {
@@ -67,21 +67,18 @@ namespace FidenzWebApp.Controllers
         public async Task<IActionResult> Index(string Search)
         {
 
-            var indexVM = new indexViewModel();
+            List<CustomerDto> customersList;
 
             if (!string.IsNullOrWhiteSpace(Search))
             {
-                var customersBySearch = await _customerService.GetAllBySearchAsync(Search);
-                indexVM.customerList = customersBySearch.ToList();
+                customersList = (await _customerService.GetAllBySearchAsync(Search)).ToList();
             }
             else
             {
-               var customersByAll = await _customerService.GetAllAsync();
-                indexVM.customerList = customersByAll.ToList();
+                customersList = (await _customerService.GetAllAsync()).ToList();
             }
 
-            indexVM.isGroupedByZip = false;
-            return View(indexVM);
+            return View(customersList);
         }
 
         public async Task<IActionResult> Update(string id)
@@ -95,7 +92,7 @@ namespace FidenzWebApp.Controllers
         }
 
 
-        public async Task<IActionResult> UpdateSave(Customers obj)
+        public async Task<IActionResult> UpdateSave(CustomerDto obj)
         {
 
             var cutomerModel = new updateCustomerDto(obj.name, obj.email, obj.phone);
@@ -155,16 +152,11 @@ namespace FidenzWebApp.Controllers
         }
 
 
-        public async Task<IActionResult> ZipSearch()
+        public async Task<IActionResult> GroupByZip()
         {
-            var list = await _customerService.GetAllByZipAsync();
-            var indexVM = new indexViewModel
-            {
-                customerList = list?.ToList() ?? new List<CustomerDto>(),
-                isGroupedByZip = true
-            };
+            var zipGroupList = await _customerService.GetAllByZipAsync();
             
-            return View("Index", indexVM);
+            return View(zipGroupList);
         }       
     }
 

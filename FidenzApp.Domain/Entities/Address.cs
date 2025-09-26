@@ -1,7 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 namespace FidenzApp.Domain.Entities
 {
-    [Owned]
     public class Address
     {
         public int number { get; set; }

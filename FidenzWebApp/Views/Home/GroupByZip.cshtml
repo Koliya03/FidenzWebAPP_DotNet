@@ -1,0 +1,94 @@
+﻿@model IEnumerable<FidenzApp.Application.DTO.ZipGroupDto>
+
+
+<a href="javascript:history.back()"
+   class="bi bi-arrow-left-square-fill px-3"
+   style="font-size: 2rem;">
+</a>
+
+<div class="w-100 card border-0 m-4">
+    <div class="class-header bg-black bg-gradient py-3 rounded-3">
+        <h2 class="text-white text-center m-0">Customers List Grouped by Zip Code</h2>
+    </div>
+</div>
+
+@if (Model is null || !Model.Any())
+{
+    <div class="alert alert-warning text-center mt-3">No results found.</div>
+}
+else
+{
+    foreach (var group in Model)
+    {
+        <div class="card shadow-sm mb-4">
+
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span class="h4 mb-0"> <h4>Zip Code : @group.ZipCode </h4></span>
+                <span class="badge bg-secondary"> <h4>Number of Customers: @((group.Customers?.Count ?? 0))</h4></span>
+            </div>
+
+            <div class="card-body">
+                @if (group.Customers is null || !group.Customers.Any())
+                {
+                    <div class="text-muted">No customers for this ZIP.</div>
+                }
+                else
+                {
+                    
+                    <div class="row row-cols-1 row-cols-md-2 g-3">
+                        @foreach (var customer in group.Customers)
+                        {
+                            <div class="col">
+                                <div class="card h-100 shadow-sm">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between">
+                                            <div class="pe-2">
+                                                <h5 class="card-title mb-1">@customer.name</h5>
+                                                <div class="text-muted fw-semibold">
+                                                    <i class="bi bi-building"></i> @customer.company
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <a asp-controller="Home"
+                                                   asp-action="Update"
+                                                   asp-route-id="@customer._id"
+                                                   class="btn btn-primary btn-sm">
+                                                    <i class="bi bi-pencil-square"></i> Edit
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <hr class="my-3" />
+
+                                        <ul class="list-unstyled small mb-3">
+                                            <li><strong>Email:</strong> @customer.email</li>
+                                            <li><strong>Phone:</strong> @customer.phone</li>
+                                            <li><strong>Age:</strong> @customer.age</li>
+                                            <li><strong>Eye color:</strong> @customer.eyeColor</li>
+                                        </ul>
+
+                                        <div class="d-flex gap-2">
+                                            <a asp-controller="Home"
+                                               asp-action="Distance"
+                                               asp-route-id="@customer._id"
+                                               class="btn btn-secondary btn-sm flex-fill">
+                                                <i class="bi bi-signpost-split"></i>
+                                                Distance from your location
+                                            </a>
+                                            <a asp-controller="Home"
+                                               asp-action="ViewInfo"
+                                               asp-route-id="@customer._id"
+                                               class="btn btn-outline-secondary btn-sm">
+                                                View all Info
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                }
+            </div>
+        </div>
+    }
+}
