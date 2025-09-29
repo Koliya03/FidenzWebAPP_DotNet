@@ -3,10 +3,11 @@ using FidenzApp.Application.Interfaces.Services;
 using Microsoft.AspNetCore.Mvc;
 
 
-namespace StudentManagement.API.Controllers
-{
+namespace FidenzWebApp.Controllers.Api_Controllers_V1
+{ 
     [ApiController]
-    [Route("api/[controller]")]
+    [ApiVersion("1.0")]
+    [Route("api/v{version:apiVersion}/[controller]")]
     public class AuthController : ControllerBase
     {
         private readonly IAuthService _authService;

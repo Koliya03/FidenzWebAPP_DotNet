@@ -7,29 +7,46 @@ using FidenzApp.Domain.Entities;
 using FidenzApp.Infranstructure.Identity;
 using FidenzApp.Infranstructure.Repositories;
 using FidenzApp.Infranstructure.Seed;
+using FidenzWebApp.Config;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.ApiExplorer;
+using Microsoft.AspNetCore.Mvc.Versioning;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
+using Swashbuckle.AspNetCore.SwaggerGen;
 using System.Security.Claims;
 using System.Text;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
 
 builder.Services.AddControllersWithViews();
 
-builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddApiVersioning(options =>
+{
+    options.DefaultApiVersion = new ApiVersion(1, 0);        
+    options.AssumeDefaultVersionWhenUnspecified = true;       
+    options.ReportApiVersions = true;                         
+    options.ApiVersionReader = ApiVersionReader.Combine(
+        new UrlSegmentApiVersionReader()
+   
+    );
+});
+builder.Services.ConfigureOptions<SwaggerVersioningConfig>();
+
+builder.Services.AddVersionedApiExplorer(options =>
+{
+    options.GroupNameFormat = "'v'VVV";                        
+    options.SubstituteApiVersionInUrl = true;                
+});
 builder.Services.AddSwaggerGen(c =>
 {
-    c.SwaggerDoc("v1", new OpenApiInfo
-    {
-        Title = "Fidenz API",
-        Version = "v1"
-    });
-
     var jwtSecurityScheme = new OpenApiSecurityScheme
     {
         Scheme = "bearer",
@@ -44,7 +61,7 @@ builder.Services.AddSwaggerGen(c =>
             Type = ReferenceType.SecurityScheme
         }
     };
-
+   
     c.AddSecurityDefinition("Bearer", jwtSecurityScheme);
 
     c.AddSecurityRequirement(new OpenApiSecurityRequirement
@@ -78,7 +95,6 @@ builder.Services.AddScoped<ICustomerService, CustomerService>();
 builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<IJwtTokenGenerator,JwtTokenGenerator>();
 builder.Services.AddScoped<ISeeder, Seed>();
-//builder.Services.AddAutoMapper(typeof(MappingProfile));
 builder.Services.AddAutoMapper(cfg => { },
     typeof(MappingProfile).Assembly);
 
@@ -159,11 +175,15 @@ if (!app.Environment.IsDevelopment())
 }
 else
 {
+
     app.UseSwagger();
     app.UseSwaggerUI(c =>
     {
-
-        c.SwaggerEndpoint("/swagger/v1/swagger.json", "Fidenz API v1");
+        var provider = app.Services.GetRequiredService<IApiVersionDescriptionProvider>();
+        foreach (var desc in provider.ApiVersionDescriptions)
+        {
+            c.SwaggerEndpoint($"/swagger/{desc.GroupName}/swagger.json", $"Fidenz API {desc.GroupName.ToUpperInvariant()}");
+        }
         c.RoutePrefix = "swagger";
     });
 }

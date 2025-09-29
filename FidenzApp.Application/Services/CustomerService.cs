@@ -40,34 +40,6 @@ namespace FidenzApp.Application.Services
             }
         }
 
-        //public async Task<IEnumerable<CustomerDto>> GetAllBySearchAsync(string search)
-        //{
-        //    var customersList = await _unitOfWork.CustomerRepository.GetAllAsync(c =>
-        //                                                c.name.Contains(search, StringComparison.OrdinalIgnoreCase)
-        //                                            || c.email.Contains(search, StringComparison.OrdinalIgnoreCase)
-        //                                            || c.phone.Contains(search, StringComparison.OrdinalIgnoreCase)
-        //                                            || c.company.Contains(search, StringComparison.OrdinalIgnoreCase)
-        //                                            || c.address.street.Contains(search, StringComparison.OrdinalIgnoreCase)
-        //                                            || c.address.city.Contains(search, StringComparison.OrdinalIgnoreCase)
-        //                                            || c.address.state.Contains(search, StringComparison.OrdinalIgnoreCase)
-        //                                            || c.address.zipcode.ToString().Contains(search)
-        //                                            || c.tags.Any(tag => tag.Contains(search, StringComparison.OrdinalIgnoreCase))
-
-
-        //        );
-
-        //    if (customersList.Count() > 0)
-        //    {
-        //        return _mapper.Map<IEnumerable<CustomerDto>>(customersList);
-
-        //    }
-        //    else
-        //    {
-        //        return new List<CustomerDto>();
-        //    }
-        //}
-
-
         public async Task<IEnumerable<CustomerDto>> GetAllBySearchAsync(string search)
         {
             if (string.IsNullOrWhiteSpace(search))
