@@ -1,5 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore;
-namespace FidenzApp.Domain.Entities
+﻿namespace FidenzApp.Domain.Entities
 {
     public class Address
     {

@@ -1,15 +1,8 @@
-﻿using FidenzApp.Application.Interfaces;
-using FidenzApp.Domain.Data;
+﻿using FidenzApp.Domain.Data;
 using FidenzApp.Domain.Entities;
-using FidenzApp.Infranstructure.Repositories;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 
 namespace FidenzApp.Infranstructure.Seed

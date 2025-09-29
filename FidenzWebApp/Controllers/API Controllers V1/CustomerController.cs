@@ -1,22 +1,8 @@
 ﻿using FidenzApp.Application.DTO;
 using FidenzApp.Application.Interfaces.Services;
-using FidenzApp.Application.Interfaces.UnitOfWork;
-using FidenzApp.Domain.Entities;
-using FidenzApp.Infranstructure.Repositories;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
-using Microsoft.IdentityModel.Tokens;
-using System.IdentityModel.Tokens.Jwt;
-using System.Linq;
-using System.Security.Claims;
-using System.Text;
-using System.Threading.Tasks;
-using static System.Net.Mime.MediaTypeNames;
 
 namespace FidenzWebApp.Controllers.Api_Controllers_V1
 {

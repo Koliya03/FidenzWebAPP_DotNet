@@ -2,15 +2,8 @@
 using FidenzApp.Application.DTO;
 using FidenzApp.Application.Interfaces.Services;
 using FidenzApp.Application.Interfaces.UnitOfWork;
-using FidenzApp.Domain.Entities;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 namespace FidenzApp.Application.Services
 {
     public class CustomerService : ICustomerService

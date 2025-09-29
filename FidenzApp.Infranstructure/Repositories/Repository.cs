@@ -1,13 +1,7 @@
 ﻿using FidenzApp.Application.Interfaces.Repositories;
 using FidenzApp.Domain.Data;
-using FidenzApp.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Linq.Expressions;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace FidenzApp.Infranstructure.Repositories
 {

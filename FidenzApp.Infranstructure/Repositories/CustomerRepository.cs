@@ -1,15 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Linq.Expressions;
-using System.Text;
-using System.Threading.Tasks;
-using FidenzApp.Application.DTO;
+﻿using FidenzApp.Application.DTO;
 using FidenzApp.Application.Interfaces.Repositories;
 using FidenzApp.Domain.Data;
 using FidenzApp.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
-using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
 
 namespace FidenzApp.Infranstructure.Repositories
 {

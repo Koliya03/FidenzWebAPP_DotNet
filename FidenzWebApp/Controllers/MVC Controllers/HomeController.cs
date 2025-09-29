@@ -1,15 +1,9 @@
 using FidenzApp.Application.DTO;
 using FidenzApp.Application.Interfaces.Services;
-using FidenzApp.Domain.Entities;
 using FidenzWebApp.Models;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.IdentityModel.Tokens;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
-using System.Net.Http.Json;
-using System.Threading.Tasks;
+
 
 
 namespace FidenzWebApp.Controllers

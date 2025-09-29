@@ -2,11 +2,6 @@
 using FidenzApp.Application.Interfaces.Services;
 using FidenzApp.Domain.Entities;
 using Microsoft.AspNetCore.Identity;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace FidenzApp.Application.Services
 {
