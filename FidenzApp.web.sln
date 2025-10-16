@@ -16,6 +16,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ReadMe", "ReadMe", "{02EA68
 		ReadMe.txt = ReadMe.txt
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "shell-scripts", "shell-scripts", "{F98AAED0-63C8-4B53-87C1-305FE443FBEC}"
+	ProjectSection(SolutionItems) = preProject
+		deploy_fidenzwebapp.sh = deploy_fidenzwebapp.sh
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

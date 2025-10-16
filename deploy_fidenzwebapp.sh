@@ -19,7 +19,6 @@ if ! id "$APP_USER" &>/dev/null; then
 fi
 
 mkdir -p $PUBLISH_SRC
-cd ..
 cd FidenzWebApp
 dotnet restore
 dotnet build --configuration Release
@@ -77,19 +76,3 @@ EOF
 sudo ln -sf $NGINX_CONF /etc/nginx/sites-enabled/
 sudo nginx -t && sudo systemctl restart nginx
 sudo certbot --nginx -d $DOMAIN --non-interactive --agree-tos -m admin@$DOMAIN || true
-
-#LOG_DIR="/var/log/$APP_NAME"
-#ARCHIVE_DIR="/var/log/$APP_NAME/archive"
-
-#sudo mkdir -p $LOG_DIR
-#sudo mkdir -p $ARCHIVE_DIR
-#sudo chown -R $APP_USER:$APP_GROUP $LOG_DIR
-#sudo chmod -R 750 $LOG_DIR
-
-#sudo bash -c "cat > /etc/cron.daily/${APP_NAME}_log_archive" <<EOF
-#!/bin/bash
-#find $LOG_DIR -type f -name "*.log" -exec cp {} $ARCHIVE_DIR/ \;
-#find $ARCHIVE_DIR -type f -mtime +7 -delete
-#EOF
-
-#sudo chmod +x /etc/cron.daily/${APP_NAME}_log_archive
