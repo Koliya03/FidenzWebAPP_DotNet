@@ -1,0 +1,11 @@
+﻿namespace FidenzApp.Application.DTO
+{
+    public class AddressDto
+    {
+        public int number { get; set; }
+        public string street { get; set; }
+        public string city { get; set; }
+        public string state { get; set; }
+        public int zipcode { get; set; }
+    }
+}

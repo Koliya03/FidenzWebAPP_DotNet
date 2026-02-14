@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36414.22
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FidenzWebApp", "FidenzWebApp\FidenzWebApp.csproj", "{2D723EFA-F066-4BE9-948E-2F4D25790E0E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FidenzApp.Application", "FidenzApp.Application\FidenzApp.Application.csproj", "{E2131EFB-54C5-453E-8DC0-FAC55CFFB959}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FidenzApp.Domain", "FidenzApp.Domain\FidenzApp.Domain.csproj", "{EEE7B34E-6B12-4DFA-99B1-9431C7311F71}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FidenzApp.Infranstructure", "FidenzApp.Infranstructure\FidenzApp.Infranstructure.csproj", "{428D3EF9-1336-4AC9-AF14-C3639F7FAF09}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ReadMe", "ReadMe", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+	ProjectSection(SolutionItems) = preProject
+		ReadMe.txt = ReadMe.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "shell-scripts", "shell-scripts", "{F98AAED0-63C8-4B53-87C1-305FE443FBEC}"
+	ProjectSection(SolutionItems) = preProject
+		deploy_fidenzwebapp.sh = deploy_fidenzwebapp.sh
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2D723EFA-F066-4BE9-948E-2F4D25790E0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D723EFA-F066-4BE9-948E-2F4D25790E0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D723EFA-F066-4BE9-948E-2F4D25790E0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D723EFA-F066-4BE9-948E-2F4D25790E0E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E2131EFB-54C5-453E-8DC0-FAC55CFFB959}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2131EFB-54C5-453E-8DC0-FAC55CFFB959}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2131EFB-54C5-453E-8DC0-FAC55CFFB959}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2131EFB-54C5-453E-8DC0-FAC55CFFB959}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EEE7B34E-6B12-4DFA-99B1-9431C7311F71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEE7B34E-6B12-4DFA-99B1-9431C7311F71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEE7B34E-6B12-4DFA-99B1-9431C7311F71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEE7B34E-6B12-4DFA-99B1-9431C7311F71}.Release|Any CPU.Build.0 = Release|Any CPU
+		{428D3EF9-1336-4AC9-AF14-C3639F7FAF09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{428D3EF9-1336-4AC9-AF14-C3639F7FAF09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{428D3EF9-1336-4AC9-AF14-C3639F7FAF09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{428D3EF9-1336-4AC9-AF14-C3639F7FAF09}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4CFD2ED8-803C-47A8-B665-86C664DA9EAB}
+	EndGlobalSection
+EndGlobal
